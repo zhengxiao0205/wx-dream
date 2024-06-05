@@ -1,0 +1,54 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "梦想打卡站",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "创建梦",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "梦想打卡站",
+        "navigationBarTextStyle": "black"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#aaa",
+    "selectedColor": "#00D0C5",
+    "list": [
+      {
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home-active.png",
+        "pagePath": "pages/home/home",
+        "text": "打卡"
+      },
+      {
+        "iconPath": "static/images/my.png",
+        "selectedIconPath": "static/images/my-active.png",
+        "pagePath": "pages/my/my",
+        "text": "筑梦"
+      }
+    ]
+  }
+}
